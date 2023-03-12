@@ -1,0 +1,63 @@
+/*Секція герой*/
+.hero{
+    padding: 200px 15px;
+    background-color: var(--color-footer);
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 767px;
+    background-size: cover;
+    margin: 0 auto;
+
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(..//../images/header-mobil.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(..//../images/header-mobil@2x.jpg);
+    }
+
+    @media (min-width: 768px) {
+        max-width: 1199px;
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(..//../images/header-tablet.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx) {
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(..//../images/header-tablet@2x.jpg);
+    }
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1600px;
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(..//../images/backround.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx) {
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(..//../images/backround@x2.jpg);
+    }
+    }
+
+
+    &__title{
+        color:var(--color-white);
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.61;
+        max-width: 360px;
+        margin: 0 auto 30px auto;
+
+        @media (min-width: 1199px) {
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 696px;
+        }
+    }
+    
+    &__button{
+        margin: 0 auto;
+        padding: 10px 24px;
+    }
+    
+}
+
